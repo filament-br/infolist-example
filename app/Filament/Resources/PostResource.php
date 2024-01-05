@@ -93,7 +93,7 @@ class PostResource extends Resource
                         ])->columns(1),
 
                     FileUpload::make('image')
-                        ->previewable()
+                        ->previewable(),
                 ])
                     ->columnSpan(1),
 
@@ -143,7 +143,7 @@ class PostResource extends Resource
                 TextEntry::make('content')
                     ->hiddenLabel()
                     ->html()
-                    ->alignJustify()
+                    ->alignJustify(),
             ])
                 ->columnSpan(2),
             InfolistSection::make([
@@ -158,7 +158,7 @@ class PostResource extends Resource
                         ->color('primary'),
 
                     IconEntry::make('published')
-                        ->boolean()
+                        ->boolean(),
 
                 ])->columns(2),
 
